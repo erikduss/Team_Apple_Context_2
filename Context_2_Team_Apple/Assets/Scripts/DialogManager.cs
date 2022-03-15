@@ -13,21 +13,24 @@ public class DialogManager : MonoBehaviour
 
     public bool dialogPanelEnabled = false;
 
-    private IQuest currentlyPendingQuest;
+    public IQuest currentlyPendingQuest;
+
+    private QuestManager questManager;
 
     // Start is called before the first frame update
     void Start()
     {
+        questManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<QuestManager>();
         DisableDialogPanel();
     }
 
-    public void EnableDialogPanel(bool hasQuestAttached, IQuest attachedQuest, string newDialogTitleText, string newDialogText)
+    public void EnableDialogPanel(bool isTheQuestStart, IQuest attachedQuest, string newDialogTitleText, string newDialogText)
     {
         dialogPanelEnabled = true;
         mainDialogPanel.SetActive(true);
         questButtons.SetActive(false);
 
-        if (hasQuestAttached)
+        if (isTheQuestStart)
         {
             questButtons.SetActive(true);
             currentlyPendingQuest = attachedQuest;
@@ -54,7 +57,7 @@ public class DialogManager : MonoBehaviour
 
         if(currentlyPendingQuest != null)
         {
-            //accept quest
+            questManager.AcceptQuest(currentlyPendingQuest.questID, currentlyPendingQuest.currentQuestStep);
         }
 
         DisableDialogPanel();

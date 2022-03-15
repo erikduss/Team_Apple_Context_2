@@ -53,6 +53,29 @@ public class QuestManager : MonoBehaviour
         }
     }
 
+    public void AcceptQuest(int _questID, int _questStepID)
+    {
+        IQuest activeQuest = allAvailableQuests.Where(a => a.questID == _questID).First();
+
+        QuestStep step = activeQuest.questSteps.Where(b => b.questStepID == _questStepID).First();
+
+        if (activeQuest.questStatus == QuestStatus.NOT_ACCEPTED)
+        {
+            activeQuest.questStatus = QuestStatus.ONGOING;
+
+            if (activeQuest.currentQuestStep == _questStepID)
+            {
+                step.CompleteQuestStep();
+
+                activeQuest.CheckForNextSteps();
+            }
+            else
+            {
+                Debug.Log("Failed to complete quest step: The quest is active, but the current quest step and the quest step to complete do not match.");
+            }
+        }
+    }
+
     public void CompleteQuestStep(int _questID, int _questStepID)
     {
         try

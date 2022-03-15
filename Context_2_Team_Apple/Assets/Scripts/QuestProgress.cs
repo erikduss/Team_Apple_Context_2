@@ -47,19 +47,20 @@ public class QuestProgress : MonoBehaviour, IClickable
 
         if(displayableQuests.Count > 0)
         {
-            if(displayableQuests[0].currentQuestStep == 0)
+            //If the dialog panel needs to enable the accept/decline buttons the functions needs a quest parameter
+            if(displayableQuests[0].currentQuestStep == 0) //This is a quest start
             {
                 string temporaryTitle = displayableQuests[0].GetCurrentTitle();
                 string temporaryDialog = displayableQuests[0].GetCurrentDialog();
 
                 dialogManager.EnableDialogPanel(true, displayableQuests[0], temporaryTitle, temporaryDialog);
             }
-            else
+            else //This is not a quest start, dialog needs to be shown only.
             {
                 string temporaryTitle = displayableQuests[0].GetCurrentTitle();
                 string temporaryDialog = displayableQuests[0].GetCurrentDialog();
 
-                dialogManager.EnableDialogPanel(true, displayableQuests[0], temporaryTitle, temporaryDialog);
+                dialogManager.EnableDialogPanel(false, null, temporaryTitle, temporaryDialog);
 
                 questManager.CompleteQuestStep(displayableQuests[0].questID, displayableQuests[0].currentQuestStep);
             }

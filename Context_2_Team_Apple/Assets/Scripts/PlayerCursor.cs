@@ -24,26 +24,46 @@ public class PlayerCursor : MonoBehaviour
     void Update()
     {
         //Check for mouse click 
-        ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out raycastHit, 100f, interactable_layer_mask))
+        if (!dialogManager.dialogPanelEnabled || dialogManager.currentlyPendingQuest == null)
         {
-            if (cursorOnDefault)
+            ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if (Physics.Raycast(ray, out raycastHit, 100f, interactable_layer_mask))
             {
-                Cursor.SetCursor(cursorCanInteractTexture, Vector2.zero, CursorMode.Auto);
-                cursorOnDefault = false;
-            }
-
-            if (Input.GetMouseButtonDown(0))
-            {
-                if (raycastHit.transform != null)
+                if (cursorOnDefault)
                 {
-                    if(raycastHit.transform.gameObject.tag == "DialogClick")
+                    Cursor.SetCursor(cursorCanInteractTexture, Vector2.zero, CursorMode.Auto);
+                    cursorOnDefault = false;
+                }
+
+                if (Input.GetMouseButtonDown(0))
+                {
+                    if (raycastHit.transform != null)
+                    {
+                        if (raycastHit.transform.gameObject.tag == "DialogClick")
+                        {
+                            dialogManager.DisableDialogPanel();
+                        }
+                        else
+                        {
+                            CurrentClickedGameObject(raycastHit.transform.gameObject);
+                        }
+                    }
+                }
+            }
+            else
+            {
+                if (!cursorOnDefault)
+                {
+                    Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
+                    cursorOnDefault = true;
+                }
+
+                if (Input.GetMouseButtonDown(0))
+                {
+                    if (dialogManager.dialogPanelEnabled)
                     {
                         dialogManager.DisableDialogPanel();
-                    }
-                    else
-                    {
-                        CurrentClickedGameObject(raycastHit.transform.gameObject);
+                        return;
                     }
                 }
             }
@@ -54,15 +74,6 @@ public class PlayerCursor : MonoBehaviour
             {
                 Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
                 cursorOnDefault = true;
-            }
-            
-            if (Input.GetMouseButtonDown(0))
-            {
-                if (dialogManager.dialogPanelEnabled)
-                {
-                    dialogManager.DisableDialogPanel();
-                    return;
-                }
             }
         }
     }
