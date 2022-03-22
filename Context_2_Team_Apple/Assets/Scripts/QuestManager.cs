@@ -12,6 +12,7 @@ public class QuestManager : MonoBehaviour
     void Awake()
     {
         allAvailableQuests.Add(new ExampleQuest{ questID = 0 });
+        allAvailableQuests.Add(new DiverQuest{ questID = 1 });
     }
 
     public bool CanProgressQuestStep(int questID, int questStepID)

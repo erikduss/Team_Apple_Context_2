@@ -1,0 +1,1369 @@
+fileFormatVersion: 2
+guid: 68a5bc9776a802b42997392bed285b35
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMasterTextureLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: Zijkant Brug
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1857
+      y: 1597
+      width: 102
+      height: 36
+    spriteID: cd1b950c23168e94a8c992f7cec83ef7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1008, y: 888}
+  - name: Bridge hori
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1265
+      y: 1560
+      width: 162
+      height: 58
+    spriteID: 8c79185875852454aa391e3d3966a419
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 437, y: 847}
+  - name: Sloep_Vlonder_Laag
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 965
+      y: 1641
+      width: 155
+      height: 75
+    spriteID: deac9f592dd4aaf4b935317cc930c732
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -410, y: 1255}
+  - name: Sloep_Gestrand
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1435
+      y: 1560
+      width: 75
+      height: 66
+    spriteID: caf228b2541156a45bacf00ae48911ac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 698, y: 1150}
+  - name: Submarine
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 980
+      y: 1312
+      width: 277
+      height: 253
+    spriteID: c15093c300b4dfd4194ca13b768a5132
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 673, y: 510}
+  - name: Steiger_Submarine
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 980
+      y: 1573
+      width: 73
+      height: 41
+    spriteID: 8e3e6cd628faf0b449ab60d40c4b1311
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 508, y: 778}
+  - name: Windmolen
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 409
+      y: 1744
+      width: 148
+      height: 258
+    spriteID: b0cc8ff5ed0089d4cad658c7a4e10e71
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -688, y: 1060}
+  - name: Korte_Ladder
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1909
+      y: 1312
+      width: 78
+      height: 99
+    spriteID: f7eaccec8f9b1404d8b60674b8f0dce5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 749, y: 598}
+  - name: Hoog_Huis_boederij
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 715
+      y: 1641
+      width: 91
+      height: 151
+    spriteID: 58ef4e59428e9af41acff30bfb989ee5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -45, y: 862}
+  - name: Hoog_Huis_Schaduw
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 814
+      y: 1736
+      width: 85
+      height: 44
+    spriteID: 8ca36cc51a666d5449a5a42e24925a57
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 42, y: 956}
+  - name: Schuur_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 567
+      y: 1984
+      width: 90
+      height: 56
+    spriteID: 33d699198d0ff06479dd5d2699f101fb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -93, y: 1154}
+  - name: 'Hut '
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 1938
+      width: 143
+      height: 94
+    spriteID: 5c8fd48048e37d141bc4d07fdd79b132
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -395, y: 1114}
+  - name: Farm
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1938
+      width: 180
+      height: 92
+    spriteID: 989e6823aee8fb04c9b7617a919c6b62
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -570, y: 1203}
+  - name: Huis_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1128
+      y: 1641
+      width: 81
+      height: 79
+    spriteID: 7f13d918cb2c0814f962f423690a8076
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 747, y: 1183}
+  - name: Huis_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1519
+      y: 1434
+      width: 165
+      height: 189
+    spriteID: e3e5a7ac4bb4f4d4a8349b0a9363594e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1056, y: 969}
+  - name: Huizen_Vlonder
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1519
+      y: 1312
+      width: 382
+      height: 114
+    spriteID: da8f19cb86da9e743b1b507f68ba6534
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1159, y: 897}
+  - name: GG_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1265
+      y: 1312
+      width: 246
+      height: 240
+    spriteID: 804ed3195feb99e45a420472a3fca987
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 454, y: 1205}
+  - name: GG_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1692
+      y: 1434
+      width: 157
+      height: 174
+    spriteID: 3bbf431af95edff4daffccaeb21ef190
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 380, y: 658}
+  - name: GG_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 567
+      y: 1641
+      width: 140
+      height: 335
+    spriteID: b490f692f1b1ca84cae0a7b9fc6e76a3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1049, y: 1188}
+  - name: Visser_Huis
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1857
+      y: 1434
+      width: 148
+      height: 155
+    spriteID: d4bd98346f67ae844add8bcd48613bc9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 730, y: 931}
+  - name: Vlonder_Net_Laag
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 965
+      y: 1724
+      width: 81
+      height: 60
+    spriteID: 33d23dcbc91cbdb408ae6abd2fd7c710
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -295, y: 1324}
+  - name: Touw _Schippers_Boot_Vlonder
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 665
+      y: 1984
+      width: 21
+      height: 29
+    spriteID: 756de2e4f96513546873a38b27456bf5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -658, y: 1499}
+  - name: Vlonder_Laag
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1744
+      width: 397
+      height: 186
+    spriteID: dfca8d90b704386429ea67277267b537
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1072, y: 1351}
+  - name: Shippers_Boot
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 814
+      y: 1641
+      width: 143
+      height: 87
+    spriteID: acaf30f9baa053c4ab280b81339da1bd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -510, y: 1171}
+  - name: ZP_Schuin_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1054
+      y: 1724
+      width: 55
+      height: 54
+    spriteID: 2626597c6c4c737449f7ff1998d6995f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 98, y: 750}
+  - name: ZP_Recht_Hang
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 907
+      y: 1736
+      width: 49
+      height: 53
+    spriteID: 6cdd4560ad0ead945904bd425eb3896f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -53, y: 822}
+  - name: ZP_Schuin_hang
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 343
+      y: 1938
+      width: 43
+      height: 54
+    spriteID: 0a890ac7c518aa4489c5fc8c189d6a3c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -325, y: 997}
+  - name: ZP_Schuin_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 343
+      y: 2000
+      width: 40
+      height: 40
+    spriteID: c8273bbe9a0d90d4bbf46e7f8f195903
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -363, y: 1003}
+  - name: ZP_Recht_sta
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1967
+      y: 1597
+      width: 63
+      height: 35
+    spriteID: d7ea87b2dcec1c7438fa74771da116b9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1198, y: 608}
+  - name: Trap_Railing
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1995
+      y: 1312
+      width: 46
+      height: 33
+    spriteID: 807ecb61edf886d42b8a53e6813e5536
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1110, y: 350}
+  - name: Mountain
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1312
+      width: 555
+      height: 424
+    spriteID: c84273eb84a30ba4a9a8b3ed50e8765b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -599, y: 454}
+  - name: Bush Stairs
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 567
+      y: 1312
+      width: 405
+      height: 321
+    spriteID: 9a34c138e6421694fbfb60488e37e434
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -282, y: 725}
+  - name: TERRAIBN_2 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 2000
+      height: 1300
+    spriteID: 04abd0db7cefbbf41a172cd6723aa5df
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 4}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  sharedRigSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: WebGL
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Windows Store Apps
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  skeletonAssetReferenceID: 
+  spriteCategoryList:
+    categories: []
+  spritePackingTag: 
+  resliceFromLayer: 0
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Extra
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 92bf7898e7c72a4408656394e9b0047c
+    layerID: 167
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Bush
+    spriteName: 
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 2e48a7750104c5c4c85ab018528bf11d
+    layerID: 43
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Zijkant Brug
+    spriteName: Zijkant Brug
+    isGroup: 0
+    parentIndex: 0
+    spriteID: cd1b950c23168e94a8c992f7cec83ef7
+    layerID: 41
+    mosaicPosition: {x: 1857, y: 1597}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Bridge hori
+    spriteName: Bridge hori
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 8c79185875852454aa391e3d3966a419
+    layerID: 40
+    mosaicPosition: {x: 1265, y: 1560}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Sleop
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 71785aeba2672074b9840e9fd2e51f54
+    layerID: 67
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Sloep_Vlonder_Laag
+    spriteName: Sloep_Vlonder_Laag
+    isGroup: 0
+    parentIndex: 4
+    spriteID: deac9f592dd4aaf4b935317cc930c732
+    layerID: 152
+    mosaicPosition: {x: 965, y: 1641}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Sloep_Vlonder_Hoog
+    spriteName: 
+    isGroup: 0
+    parentIndex: 4
+    spriteID: 16b9497fda900cb4492d15cd8e878ac9
+    layerID: 134
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Sloep_Gestrand
+    spriteName: Sloep_Gestrand
+    isGroup: 0
+    parentIndex: 4
+    spriteID: caf228b2541156a45bacf00ae48911ac
+    layerID: 69
+    mosaicPosition: {x: 1435, y: 1560}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Submarine
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: bc299c498485b064194aabbdacb6af12
+    layerID: 163
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Submarine
+    spriteName: Submarine
+    isGroup: 0
+    parentIndex: 8
+    spriteID: c15093c300b4dfd4194ca13b768a5132
+    layerID: 82
+    mosaicPosition: {x: 980, y: 1312}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Steiger_Submarine
+    spriteName: Steiger_Submarine
+    isGroup: 0
+    parentIndex: 8
+    spriteID: 8e3e6cd628faf0b449ab60d40c4b1311
+    layerID: 52
+    mosaicPosition: {x: 980, y: 1573}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Windmolen
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 006d6a7a961c3ef48807b1fdaf2df1fe
+    layerID: 165
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Windmolen
+    spriteName: Windmolen
+    isGroup: 0
+    parentIndex: 11
+    spriteID: b0cc8ff5ed0089d4cad658c7a4e10e71
+    layerID: 72
+    mosaicPosition: {x: 409, y: 1744}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Korte_Ladder
+    spriteName: Korte_Ladder
+    isGroup: 0
+    parentIndex: 11
+    spriteID: f7eaccec8f9b1404d8b60674b8f0dce5
+    layerID: 73
+    mosaicPosition: {x: 1909, y: 1312}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Boederij
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 3914863b93564db478604638eae73648
+    layerID: 153
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Hoog_Huis_boederij
+    spriteName: Hoog_Huis_boederij
+    isGroup: 0
+    parentIndex: 14
+    spriteID: 58ef4e59428e9af41acff30bfb989ee5
+    layerID: 77
+    mosaicPosition: {x: 715, y: 1641}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Hoog_Huis_Schaduw
+    spriteName: Hoog_Huis_Schaduw
+    isGroup: 0
+    parentIndex: 14
+    spriteID: 8ca36cc51a666d5449a5a42e24925a57
+    layerID: 80
+    mosaicPosition: {x: 814, y: 1736}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Schuur_2
+    spriteName: Schuur_2
+    isGroup: 0
+    parentIndex: 14
+    spriteID: 33d699198d0ff06479dd5d2699f101fb
+    layerID: 175
+    mosaicPosition: {x: 567, y: 1984}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: 'Hut '
+    spriteName: 'Hut '
+    isGroup: 0
+    parentIndex: 14
+    spriteID: 5c8fd48048e37d141bc4d07fdd79b132
+    layerID: 171
+    mosaicPosition: {x: 192, y: 1938}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Schuuur
+    spriteName: 
+    isGroup: 0
+    parentIndex: 14
+    spriteID: 5bcea624e40a5f04a85d8345b740bffd
+    layerID: 51
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Farm
+    spriteName: Farm
+    isGroup: 0
+    parentIndex: 14
+    spriteID: 989e6823aee8fb04c9b7617a919c6b62
+    layerID: 42
+    mosaicPosition: {x: 4, y: 1938}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Huizen
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: c56db6da71523f1448830d2cae868cbd
+    layerID: 155
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Huis_2
+    spriteName: Huis_2
+    isGroup: 0
+    parentIndex: 21
+    spriteID: 7f13d918cb2c0814f962f423690a8076
+    layerID: 86
+    mosaicPosition: {x: 1128, y: 1641}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Huis_1
+    spriteName: Huis_1
+    isGroup: 0
+    parentIndex: 21
+    spriteID: e3e5a7ac4bb4f4d4a8349b0a9363594e
+    layerID: 85
+    mosaicPosition: {x: 1519, y: 1434}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Huizen_Vlonder
+    spriteName: Huizen_Vlonder
+    isGroup: 0
+    parentIndex: 21
+    spriteID: da8f19cb86da9e743b1b507f68ba6534
+    layerID: 127
+    mosaicPosition: {x: 1519, y: 1312}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Gezonken gebouwen
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: ae400440f1dbcc84cbefbed3c9cbfe03
+    layerID: 150
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: GG_1
+    spriteName: GG_1
+    isGroup: 0
+    parentIndex: 25
+    spriteID: 804ed3195feb99e45a420472a3fca987
+    layerID: 149
+    mosaicPosition: {x: 1265, y: 1312}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: GG_2
+    spriteName: GG_2
+    isGroup: 0
+    parentIndex: 25
+    spriteID: 3bbf431af95edff4daffccaeb21ef190
+    layerID: 148
+    mosaicPosition: {x: 1692, y: 1434}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: GG_3
+    spriteName: GG_3
+    isGroup: 0
+    parentIndex: 25
+    spriteID: b490f692f1b1ca84cae0a7b9fc6e76a3
+    layerID: 147
+    mosaicPosition: {x: 567, y: 1641}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Visser
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 975bc79a8ac0d6041887bf2e3930eb1d
+    layerID: 159
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Visser_Huis
+    spriteName: Visser_Huis
+    isGroup: 0
+    parentIndex: 29
+    spriteID: d4bd98346f67ae844add8bcd48613bc9
+    layerID: 48
+    mosaicPosition: {x: 1857, y: 1434}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Vlonder_Net_Laag
+    spriteName: Vlonder_Net_Laag
+    isGroup: 0
+    parentIndex: 29
+    spriteID: 33d23dcbc91cbdb408ae6abd2fd7c710
+    layerID: 146
+    mosaicPosition: {x: 965, y: 1724}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Vonder_Net_Hoog
+    spriteName: 
+    isGroup: 0
+    parentIndex: 29
+    spriteID: 53c728f9462971a4d8d44993673bd800
+    layerID: 49
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Vlonder_Hoog
+    spriteName: 
+    isGroup: 0
+    parentIndex: 29
+    spriteID: 580d79543889e38418741691957eb481
+    layerID: 129
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Touw _Schippers_Boot_Vlonder
+    spriteName: Touw _Schippers_Boot_Vlonder
+    isGroup: 0
+    parentIndex: 29
+    spriteID: 756de2e4f96513546873a38b27456bf5
+    layerID: 140
+    mosaicPosition: {x: 665, y: 1984}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Vlonder_Laag
+    spriteName: Vlonder_Laag
+    isGroup: 0
+    parentIndex: 29
+    spriteID: dfca8d90b704386429ea67277267b537
+    layerID: 66
+    mosaicPosition: {x: 4, y: 1744}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Shippers_Boot
+    spriteName: Shippers_Boot
+    isGroup: 0
+    parentIndex: 29
+    spriteID: acaf30f9baa053c4ab280b81339da1bd
+    layerID: 139
+    mosaicPosition: {x: 814, y: 1641}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Zonnepanelen
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 17f186b808408cd4eafcbeb3ce950e8e
+    layerID: 101
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: ZP_Schuin_2
+    spriteName: ZP_Schuin_2
+    isGroup: 0
+    parentIndex: 37
+    spriteID: 2626597c6c4c737449f7ff1998d6995f
+    layerID: 107
+    mosaicPosition: {x: 1054, y: 1724}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: ZP_Recht_Hang
+    spriteName: ZP_Recht_Hang
+    isGroup: 0
+    parentIndex: 37
+    spriteID: 6cdd4560ad0ead945904bd425eb3896f
+    layerID: 106
+    mosaicPosition: {x: 907, y: 1736}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: ZP_Schuin_hang
+    spriteName: ZP_Schuin_hang
+    isGroup: 0
+    parentIndex: 37
+    spriteID: 0a890ac7c518aa4489c5fc8c189d6a3c
+    layerID: 104
+    mosaicPosition: {x: 343, y: 1938}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: ZP_Schuin_1
+    spriteName: ZP_Schuin_1
+    isGroup: 0
+    parentIndex: 37
+    spriteID: c8273bbe9a0d90d4bbf46e7f8f195903
+    layerID: 100
+    mosaicPosition: {x: 343, y: 2000}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: ZP_Recht_sta
+    spriteName: ZP_Recht_sta
+    isGroup: 0
+    parentIndex: 37
+    spriteID: d7ea87b2dcec1c7438fa74771da116b9
+    layerID: 98
+    mosaicPosition: {x: 1967, y: 1597}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Trap_Railing
+    spriteName: Trap_Railing
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 807ecb61edf886d42b8a53e6813e5536
+    layerID: 91
+    mosaicPosition: {x: 1995, y: 1312}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Mountain
+    spriteName: Mountain
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c84273eb84a30ba4a9a8b3ed50e8765b
+    layerID: 177
+    mosaicPosition: {x: 4, y: 1312}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Bush Stairs
+    spriteName: Bush Stairs
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 9a34c138e6421694fbfb60488e37e434
+    layerID: 180
+    mosaicPosition: {x: 567, y: 1312}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: TERRAIBN_2 copy
+    spriteName: TERRAIBN_2 copy
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 04abd0db7cefbbf41a172cd6723aa5df
+    layerID: 170
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: TERRAIBN_2
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f74e685c0cea4f4458cedb29c2e0264c
+    layerID: 169
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Terrain_1
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 9c35a9f48264fe543b76c7206d810949
+    layerID: 75
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  sharedRigPSDLayers: []
+  pSDLayerImportSetting: []
+  generateGOHierarchy: 0
+  textureAssetName: 
+  prefabAssetName: 
+  spriteLibAssetName: 
+  skeletonAssetName: 
+  secondarySpriteTextures: []
