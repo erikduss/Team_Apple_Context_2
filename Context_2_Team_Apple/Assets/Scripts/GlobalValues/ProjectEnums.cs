@@ -29,3 +29,19 @@ public enum QuestStepStatus
     COMPLETED,
     FAILED
 }
+
+public enum Resource
+{
+    WOOD,
+    METAL,
+    FOOD,
+    NONE
+}
+
+public enum Reputation
+{
+    CULTURE,
+    NATURE,
+    SOCIETY,
+    NONE
+}

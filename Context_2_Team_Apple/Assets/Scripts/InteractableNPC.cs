@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InteractableNPC : MonoBehaviour, IClickable
+public class InteractableNPC : MonoBehaviour
 {
     [SerializeField] private NPCStatus currentNpcStatus;
 
@@ -39,24 +39,7 @@ public class InteractableNPC : MonoBehaviour, IClickable
         
     }
 
-    public void ObjectClicked()
-    {
-        if (NPCHasQuest)
-        {
-            string temporaryTitle = NPCQuest.questSteps[NPCQuest.currentQuestStep].questStepTitle;
-            string temporaryDialog = NPCQuest.questSteps[NPCQuest.currentQuestStep].questStepObjective;
-
-            dialogManager.EnableDialogPanel(true, NPCQuest, temporaryTitle, temporaryDialog);
-        }
-        else if(currentNpcStatus == NPCStatus.CAN_TALK)
-        {
-            string temporaryTitle = "Grumpy Old Man";
-            string temporaryDialog = "I have nothing to say, I'm just not in the mood for talking.";
-            dialogManager.EnableDialogPanel(false, null, temporaryTitle, temporaryDialog);
-        }
-    }
-
-    private void ChangeNPCStatus(NPCStatus newStatus)
+    public void ChangeNPCStatus(NPCStatus newStatus)
     {
         switch (newStatus)
         {

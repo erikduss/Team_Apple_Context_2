@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ExampleQuest : IQuest
+public class MechanicQuest : IQuest
 {
     /*
      * These variables do not need to be changed.
@@ -12,7 +12,7 @@ public class ExampleQuest : IQuest
      */
 
     //The name of this quest
-    private string _questname = "ExampleQuest";
+    private string _questname = "MechanicQuest";
 
     public int questID { get; set; }
 
@@ -26,7 +26,7 @@ public class ExampleQuest : IQuest
 
     public List<QuestStep> questSteps { get; set; }
 
-    public ExampleQuest()
+    public MechanicQuest()
     {
         amountOfQuestSteps = 0;
         currentQuestStep = 0;

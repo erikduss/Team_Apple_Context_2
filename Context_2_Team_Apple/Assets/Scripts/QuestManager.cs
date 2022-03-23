@@ -8,11 +8,18 @@ public class QuestManager : MonoBehaviour
     private List<IQuest> allAvailableQuests = new List<IQuest>();
     private List<IQuest> allCompletedQuests = new List<IQuest>();
 
+    [SerializeField] private List<InteractableNPC> npcs = new List<InteractableNPC>();
+
+    [SerializeField] private GameObject diverQuestObject;
+
     // Start is called before the first frame update
     void Awake()
     {
         allAvailableQuests.Add(new ExampleQuest{ questID = 0 });
         allAvailableQuests.Add(new DiverQuest{ questID = 1 });
+        allAvailableQuests.Add(new PirateQuest { questID = 2 });
+        allAvailableQuests.Add(new MechanicQuest { questID = 3 });
+        allAvailableQuests.Add(new FisherQuest { questID = 4 });
     }
 
     public bool CanProgressQuestStep(int questID, int questStepID)
@@ -68,6 +75,8 @@ public class QuestManager : MonoBehaviour
             {
                 step.CompleteQuestStep();
 
+                CheckForNessecaryActions(activeQuest);
+
                 activeQuest.CheckForNextSteps();
             }
             else
@@ -91,6 +100,8 @@ public class QuestManager : MonoBehaviour
                 {
                     step.CompleteQuestStep();
 
+                    CheckForNessecaryActions(activeQuest);
+
                     activeQuest.CheckForNextSteps();
                 }
                 else
@@ -106,6 +117,29 @@ public class QuestManager : MonoBehaviour
         catch
         {
             Debug.Log("Failed to complete Quest: " + _questID + " Step: " + _questStepID);
+        }
+    }
+
+    private void CheckForNessecaryActions(IQuest quest)
+    {
+        //Diver quest actions
+        if(quest.questID == 1)
+        {
+            if(quest.currentQuestStep == 0)
+            {
+                npcs[0].ChangeNPCStatus(NPCStatus.HAS_QUEST_RUNNING);
+                diverQuestObject.SetActive(true);
+            }
+            else if(quest.currentQuestStep == 1)
+            {
+                diverQuestObject.SetActive(false);
+                npcs[0].ChangeNPCStatus(NPCStatus.HAS_QUEST_COMPLETE);
+            }
+            else if(quest.currentQuestStep == 2)
+            {
+                npcs[0].ChangeNPCStatus(NPCStatus.NONE);
+                npcs[0].gameObject.layer = 0;
+            }
         }
     }
 }
