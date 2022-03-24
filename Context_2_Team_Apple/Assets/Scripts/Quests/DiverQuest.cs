@@ -38,7 +38,7 @@ public class DiverQuest : IQuest
         //First String = Title of the quest step (This will show as title for any dialog).
         //Second String = Dialog text for the quest step.
         AddQuestStep("Diver", "Hey, friend. We are trying to dig up some metals from the ocean floor. Would you like to help us?", null);
-        AddQuestStep("...", "You decide to help the diver. ", null);
+        AddQuestStep("...", "You decide to help the diver. ", new QuestStepReward(0, -60, 100, -10, -10, 20));
         AddQuestStep("Diver", "Thanks for helping! Here, have some of the metals we recovered.", null);
     }
 

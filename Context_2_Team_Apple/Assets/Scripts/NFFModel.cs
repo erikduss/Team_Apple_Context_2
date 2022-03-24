@@ -4,11 +4,18 @@ using UnityEngine;
 
 public class NFFModel : MonoBehaviour
 {
-    private float maxY = 3.8f;
-    private float minY = -3.8f;
+    //prototype was 
+    // y = 3.8
+    // x = 4.4
 
-    private float maxX = 4.4f;
-    private float minX = -4.4f;
+    private float yVal = 74f;
+    private float xVal = 98.5f;
+
+    private float maxY = 74f;
+    private float minY = -74f;
+
+    private float maxX = 98.5f;
+    private float minX = -98.5f;
 
     private Vector2 currentPosition;
     private Vector2 currentDestination;
@@ -45,10 +52,10 @@ public class NFFModel : MonoBehaviour
         //Society point = 4.4f, -3.8f (between 0 and 4.4f) --- RIGHT
 
         //Vertical is not shared like horizontal is
-        float destY = ((ReputationManager.nature * 2) * 3.8f) / 100;
+        float destY = ((ReputationManager.nature * 2) * yVal) / 100;
 
-        float fixedCulture = (-ReputationManager.culture * 4.4f) / 100;
-        float fixedSociety = (ReputationManager.society * 4.4f) / 100;
+        float fixedCulture = (-ReputationManager.culture * xVal) / 100;
+        float fixedSociety = (ReputationManager.society * xVal) / 100;
 
         float destX = fixedCulture + fixedSociety;
 

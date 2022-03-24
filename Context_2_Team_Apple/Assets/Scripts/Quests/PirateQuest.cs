@@ -37,9 +37,9 @@ public class PirateQuest : IQuest
         //EXAMPLE:
         //First String = Title of the quest step (This will show as title for any dialog).
         //Second String = Dialog text for the quest step.
-        AddQuestStep("Builder", "Hey you! Could you grab some wood for me please?", null);
-        AddQuestStep("...", "You take the wood.", new QuestStepReward(100, -50, -20, 0, -25, 0));
-        AddQuestStep("Builder", "Thanks for the wood!", new QuestStepReward(-50, 0, 0, 0, 0, 40));
+        AddQuestStep("Pirate", "Hey! These runts think they should have the mainland to themselves. What makes them so high and mighty. Them living is an insult to society. We need you to help us get rid of these pests.", null);
+        AddQuestStep("...", "Being the natural pirate you are, you shoot the cannons even faster than the pirates could.", new QuestStepReward(0, 0, 0, -20, 40, -20));
+        AddQuestStep("Pirate", "Wow! You're a natural, thanks for the help.", new QuestStepReward(100, 100, 100, 0, 0, 0));
     }
 
     //This function will automatically get called when a quest step has been completed.

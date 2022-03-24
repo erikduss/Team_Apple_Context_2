@@ -37,9 +37,9 @@ public class FisherQuest : IQuest
         //EXAMPLE:
         //First String = Title of the quest step (This will show as title for any dialog).
         //Second String = Dialog text for the quest step.
-        AddQuestStep("Builder", "Hey you! Could you grab some wood for me please?", null);
-        AddQuestStep("...", "You take the wood.", new QuestStepReward(100, -50, -20, 0, -25, 0));
-        AddQuestStep("Builder", "Thanks for the wood!", new QuestStepReward(-50, 0, 0, 0, 0, 40));
+        AddQuestStep("Fisherman", "Hey, friend. There are pirates about that destroyed some of our fishing ships. Would you like to help us make new ones?", null);
+        AddQuestStep("...", "You decide to help the fisher. ", new QuestStepReward(100, -30, 0, 10, -30, 20));
+        AddQuestStep("Fisherman", "Thanks for helping!", new QuestStepReward(-100, 100, 0, 0, 0, 0));
     }
 
     //This function will automatically get called when a quest step has been completed.

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MechanicQuest : IQuest
+public class ExplorerQuest : IQuest
 {
     /*
      * These variables do not need to be changed.
@@ -12,7 +12,7 @@ public class MechanicQuest : IQuest
      */
 
     //The name of this quest
-    private string _questname = "MechanicQuest";
+    private string _questname = "ExplorerQuest";
 
     public int questID { get; set; }
 
@@ -26,7 +26,7 @@ public class MechanicQuest : IQuest
 
     public List<QuestStep> questSteps { get; set; }
 
-    public MechanicQuest()
+    public ExplorerQuest()
     {
         amountOfQuestSteps = 0;
         currentQuestStep = 0;
@@ -37,9 +37,9 @@ public class MechanicQuest : IQuest
         //EXAMPLE:
         //First String = Title of the quest step (This will show as title for any dialog).
         //Second String = Dialog text for the quest step.
-        AddQuestStep("Builder", "Hey you! Could you grab some wood for me please?", null);
-        AddQuestStep("...", "You take the wood.", new QuestStepReward(100, -50, -20, 0, -25, 0));
-        AddQuestStep("Builder", "Thanks for the wood!", new QuestStepReward(-50, 0, 0, 0, 0, 40));
+        AddQuestStep("Explorer", "Oh hey, I've been trying to fix the electricity for the city. But I can't seem to get it to work, would you mind taking a look at it?", null);
+        AddQuestStep("...", "You take a look at the electricity issue... It seems to just be a flat 2D image of an upside down bird. Somehow touching it fixed it.", new QuestStepReward(-100, -20, 0, 10, -40, 30));
+        AddQuestStep("Explorer", "Oh wow! You actually fixed it!", new QuestStepReward(0, 100, 0, 0, 0, 0));
     }
 
     //This function will automatically get called when a quest step has been completed.
