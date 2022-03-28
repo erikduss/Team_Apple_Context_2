@@ -25,6 +25,7 @@ public class QuestManager : MonoBehaviour
         allAvailableQuests.Add(new PirateQuest { questID = 2 });
         allAvailableQuests.Add(new ExplorerQuest { questID = 3 });
         allAvailableQuests.Add(new FisherQuest { questID = 4 });
+        allAvailableQuests.Add(new NieuweQuest { questID = 5 });
     }
 
     public bool CanProgressQuestStep(int questID, int questStepID)
@@ -147,6 +148,49 @@ public class QuestManager : MonoBehaviour
             }
         }
 
+        if (quest.questID == 2)
+        {
+            if (quest.currentQuestStep == 0)
+            {
+                pirateQuestObject1.SetActive(true);
+            }
+            else if (quest.currentQuestStep == 1)
+            {
+                pirateQuestObject1.SetActive(false);
+                pirateQuestObject2.SetActive(true);
+
+                for (int i = 0; i < npcs.Count; i++)
+                {
+                    npcs[1].gameObject.layer = 0;
+                    npcs[i].gameObject.SetActive(false);
+                }
+            }
+            else if (quest.currentQuestStep == 2)
+            {
+                pirateQuestObject2.SetActive(false);
+            }
+        }
+
+        if (quest.questID == 3)
+        {
+            if (quest.currentQuestStep == 0)
+            {
+                npcs[1].ChangeNPCStatus(NPCStatus.HAS_QUEST_RUNNING);
+                explorerQuestObject.SetActive(true);
+            }
+            else if (quest.currentQuestStep == 1)
+            {
+                explorerQuestObject.SetActive(false);
+                npcs[1].ChangeNPCStatus(NPCStatus.HAS_QUEST_COMPLETE);
+            }
+            else if (quest.currentQuestStep == 2)
+            {
+                npcs[1].ChangeNPCStatus(NPCStatus.NONE);
+                npcs[1].gameObject.layer = 0;
+            }
+        }
+
+        //Fisher quest
         if (quest.questID == 4)
         {
             if (quest.currentQuestStep == 0)
@@ -170,46 +214,5 @@ public class QuestManager : MonoBehaviour
             }
         }
 
-        if (quest.questID == 3)
-        {
-            if (quest.currentQuestStep == 0)
-            {
-                npcs[1].ChangeNPCStatus(NPCStatus.HAS_QUEST_RUNNING);
-                explorerQuestObject.SetActive(true);
-            }
-            else if (quest.currentQuestStep == 1)
-            {
-                explorerQuestObject.SetActive(false);
-                npcs[1].ChangeNPCStatus(NPCStatus.HAS_QUEST_COMPLETE);
-            }
-            else if (quest.currentQuestStep == 2)
-            {
-                npcs[1].ChangeNPCStatus(NPCStatus.NONE);
-                npcs[1].gameObject.layer = 0;
-            }
-        }
-
-        if (quest.questID == 2)
-        {
-            if (quest.currentQuestStep == 0)
-            {
-                pirateQuestObject1.SetActive(true);
-            }
-            else if (quest.currentQuestStep == 1)
-            {
-                pirateQuestObject1.SetActive(false);
-                pirateQuestObject2.SetActive(true);
-
-                for(int i=0; i<npcs.Count; i++)
-                {
-                    npcs[1].gameObject.layer = 0;
-                    npcs[i].gameObject.SetActive(false);
-                }
-            }
-            else if (quest.currentQuestStep == 2)
-            {
-                pirateQuestObject2.SetActive(false);
-            }
-        }
     }
 }

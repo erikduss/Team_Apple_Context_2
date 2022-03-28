@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5982064585198021475}
   - component: {fileID: 5982064585198021476}
   - component: {fileID: 4427685921351375438}
+  - component: {fileID: -329895552417505955}
   m_Layer: 6
   m_Name: QuestProgressObjectPrefab
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5982064585198021477}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.72, y: 2.3, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -97,5 +98,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcda8cec0da0d2e4c8c7bd738b89f278, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questID: -1
-  questStepID: -1
+  questID: 
+  questStepID: 
+--- !u!65 &-329895552417505955
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5982064585198021477}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.24, y: 10.24, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}

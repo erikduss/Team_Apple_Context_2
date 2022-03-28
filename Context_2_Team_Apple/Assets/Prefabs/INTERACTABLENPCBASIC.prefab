@@ -11,7 +11,9 @@ GameObject:
   - component: {fileID: 5544761704602829945}
   - component: {fileID: 5544761704602829944}
   - component: {fileID: 5544761704602829943}
-  m_Layer: 0
+  - component: {fileID: 4753054874583963175}
+  - component: {fileID: 9030795994638943553}
+  m_Layer: 6
   m_Name: INTERACTABLENPCBASIC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5544761704602829946}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -8.22, y: -0.52225155, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -107,6 +109,33 @@ MonoBehaviour:
   hasQuestIcon: {fileID: 5544761704760291876}
   hasQuestCompleteIcon: {fileID: 5544761705981076857}
   hasQuestRunningIcon: {fileID: 5544761705671246184}
+--- !u!114 &4753054874583963175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5544761704602829946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcda8cec0da0d2e4c8c7bd738b89f278, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questID: 
+  questStepID: 
+--- !u!65 &9030795994638943553
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5544761704602829946}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5544761704760291876
 GameObject:
   m_ObjectHideFlags: 0
