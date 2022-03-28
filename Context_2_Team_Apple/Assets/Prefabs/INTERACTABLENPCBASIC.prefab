@@ -102,6 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentNpcStatus: 4
+  questID: 0
   canTalkIcon: {fileID: 5544761705644921773}
   hasQuestIcon: {fileID: 5544761704760291876}
   hasQuestCompleteIcon: {fileID: 5544761705981076857}
