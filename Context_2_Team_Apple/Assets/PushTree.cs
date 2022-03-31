@@ -17,6 +17,9 @@ public class PushTree : MonoBehaviour
 
     bool canPlay = false;
 
+    public bool questStarted = false;
+    private bool completedStep = false;
+
     [SerializeField]float timeToGoBack = 0.8f;
     int press = 0;
     
@@ -50,16 +53,17 @@ public class PushTree : MonoBehaviour
         }
 
         //MINI GAME VOLTOOID
-        if(press >= 20)
+        if(press >= 20 && !completedStep)
         {
             treeAnim.SetTrigger("Move");
             showUI.SetActive(false);
-            //questManager.CompleteQuestStep(questID, QuestStepID);
+            questManager.CompleteQuestStep(6, 1);
             deerAnim.SetTrigger("Move");
             canPlay = false;
 
+            completedStep = true;
+
             StartCoroutine(Destroy());
-            
         }
 
         Debug.Log(press);
@@ -75,8 +79,11 @@ public class PushTree : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        onTrigger = true;
-        showUI.SetActive(true);
+        if (questStarted)
+        {
+            onTrigger = true;
+            showUI.SetActive(true);
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)

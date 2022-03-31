@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     Vector2 moveDir;
     [SerializeField] Rigidbody2D rb;
     [SerializeField] float speed = 10f;
-    [SerializeField] Animator animator;
+    //[SerializeField] Animator animator;
     
 
     void FixedUpdate()
@@ -30,11 +30,11 @@ public class PlayerMovement : MonoBehaviour
 
         if(x > 0 || y > 0)
         {
-            animator.SetBool("isWalking", true);
+            //animator.SetBool("isWalking", true);
         }
         else
         {
-            animator.SetBool("isWalking", false);
+            //animator.SetBool("isWalking", false);
         }
     }
 

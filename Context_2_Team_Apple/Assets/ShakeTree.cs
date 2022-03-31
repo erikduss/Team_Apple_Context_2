@@ -21,10 +21,17 @@ public class ShakeTree : MonoBehaviour
     int press = 0;
     int pressR = 0;
 
+    public bool questStarted = false;
+    private bool completedStep = false;
+
+    private QuestManager questManager;
+
     bool canPlay = false;
 
     void Start()
     {
+        questManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<QuestManager>();
+
         birds.SetActive(false);
         showUI.SetActive(false);
     }
@@ -62,12 +69,20 @@ public class ShakeTree : MonoBehaviour
         //MINI GAME VOLTOOID
         if (press >= 20 && pressR >= 20)
         {
-            
-            showUI.SetActive(false);
-            Burst();
-            canPlay = false;
-            birds.SetActive(true);
-            StartCoroutine(Destroy());
+            if (!completedStep)
+            {
+                showUI.SetActive(false);
+                Burst();
+
+                questManager.CompleteQuestStep(7, 1);
+
+                canPlay = false;
+                birds.SetActive(true);
+
+                completedStep = true;
+
+                StartCoroutine(Destroy());
+            }
         }
         
         
@@ -89,8 +104,11 @@ public class ShakeTree : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        onTrigger = true;
-        showUI.SetActive(true);
+        if (questStarted)
+        {
+            onTrigger = true;
+            showUI.SetActive(true);
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)

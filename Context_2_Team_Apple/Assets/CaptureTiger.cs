@@ -24,7 +24,9 @@ public class CaptureTiger : MonoBehaviour
 
     bool canPlay = false;
 
-  
+    public bool questStarted = false;
+    private bool completedStep = false;
+
 
     void Start()
     {
@@ -67,14 +69,21 @@ public class CaptureTiger : MonoBehaviour
         //MINI GAME VOLTOOID
         if (press >= 20 && pressR >= 20)
         {
-            showUI.SetActive(false);
-            //questManager.CompleteQuestStep(questID, QuestStepID);
-            dustCloud.SetActive(false);
-            tigerSprite.SetActive(false);
-            tigerTrigger.enabled = false;
-            tigerObj.SetActive(true);
-            canPlay = false;
-            StartCoroutine(Destroy());
+            if (!completedStep)
+            {
+                showUI.SetActive(false);
+                questManager.CompleteQuestStep(8, 1);
+                dustCloud.SetActive(false);
+                tigerSprite.SetActive(false);
+                tigerTrigger.enabled = false;
+                tigerObj.SetActive(true);
+                canPlay = false;
+
+                completedStep = true;
+
+                StartCoroutine(Destroy());
+            }
+            
         }
 
 
@@ -92,9 +101,12 @@ public class CaptureTiger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        onTrigger = true;
-        
-        showUI.SetActive(true);
+        if (questStarted)
+        {
+            onTrigger = true;
+
+            showUI.SetActive(true);
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)

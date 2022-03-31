@@ -5086,7 +5086,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.049639285, y: 2.9370666}
+  m_Offset: {x: -0.0018319935, y: 2.9457345}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -5097,7 +5097,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.51006293, y: 1.8619592}
+  m_Size: {x: 0.41444835, y: 1.0380192}
   m_EdgeRadius: 0
 --- !u!50 &323096604
 Rigidbody2D:
@@ -5151,7 +5151,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 323096604}
   speed: 2
-  animator: {fileID: 0}
 --- !u!114 &323096607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5962,6 +5961,7 @@ MonoBehaviour:
   tigerTrigger: {fileID: 367659720}
   tigerObj: {fileID: 1255264609}
   timeToGoBack: 0.8
+  questStarted: 0
 --- !u!60 &367659720
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7365,9 +7365,10 @@ Transform:
   m_LocalPosition: {x: -10.92, y: 15.31, z: 0}
   m_LocalScale: {x: 1.2987739, y: 1.2987739, z: 1.2987739}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 650750373}
   m_Father: {fileID: 1191046175}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &469523577
 SpriteRenderer:
@@ -9365,11 +9366,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1191046175}
+    m_TransformParent: {fileID: 469523576}
     m_Modifications:
     - target: {fileID: 4753054874583963175, guid: 73308d17ce9a5e240a2211223989890f, type: 3}
       propertyPath: questID.Array.size
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4753054874583963175, guid: 73308d17ce9a5e240a2211223989890f, type: 3}
       propertyPath: questID.Array.data[0]
@@ -9397,7 +9398,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4753054874583963175, guid: 73308d17ce9a5e240a2211223989890f, type: 3}
       propertyPath: questStepID.Array.size
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753054874583963175, guid: 73308d17ce9a5e240a2211223989890f, type: 3}
+      propertyPath: questStepID.Array.data[1]
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5544761704602829943, guid: 73308d17ce9a5e240a2211223989890f, type: 3}
       propertyPath: questID
@@ -9413,23 +9418,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5544761704602829945, guid: 73308d17ce9a5e240a2211223989890f, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.46248868
+      value: 0.3560964
       objectReference: {fileID: 0}
     - target: {fileID: 5544761704602829945, guid: 73308d17ce9a5e240a2211223989890f, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.46248868
+      value: 0.3560964
       objectReference: {fileID: 0}
     - target: {fileID: 5544761704602829945, guid: 73308d17ce9a5e240a2211223989890f, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.46248868
+      value: 0.3560964
       objectReference: {fileID: 0}
     - target: {fileID: 5544761704602829945, guid: 73308d17ce9a5e240a2211223989890f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.000812
+      value: -0.062221374
       objectReference: {fileID: 0}
     - target: {fileID: 5544761704602829945, guid: 73308d17ce9a5e240a2211223989890f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.274971
+      value: -0.026971139
       objectReference: {fileID: 0}
     - target: {fileID: 5544761704602829945, guid: 73308d17ce9a5e240a2211223989890f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9465,15 +9470,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5544761704602829946, guid: 73308d17ce9a5e240a2211223989890f, type: 3}
       propertyPath: m_Name
-      value: INTERACTABLENPCBASIC
+      value: Deer
       objectReference: {fileID: 0}
     - target: {fileID: 9030795994638943553, guid: 73308d17ce9a5e240a2211223989890f, type: 3}
       propertyPath: m_Size.x
-      value: 15.522087
+      value: 4.5312405
       objectReference: {fileID: 0}
     - target: {fileID: 9030795994638943553, guid: 73308d17ce9a5e240a2211223989890f, type: 3}
       propertyPath: m_Size.y
-      value: 10.600776
+      value: 4.2472568
       objectReference: {fileID: 0}
     - target: {fileID: 9030795994638943553, guid: 73308d17ce9a5e240a2211223989890f, type: 3}
       propertyPath: m_Size.z
@@ -9481,11 +9486,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9030795994638943553, guid: 73308d17ce9a5e240a2211223989890f, type: 3}
       propertyPath: m_Center.x
-      value: 2.3465595
+      value: 0.3565107
       objectReference: {fileID: 0}
     - target: {fileID: 9030795994638943553, guid: 73308d17ce9a5e240a2211223989890f, type: 3}
       propertyPath: m_Center.y
-      value: -2.3522887
+      value: 0.16721617
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5544761704602829944, guid: 73308d17ce9a5e240a2211223989890f, type: 3}
@@ -9898,7 +9903,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.864135, y: 1}
+    m_SensorSize: {x: 2.125, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -10552,6 +10557,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4290504334038415623, guid: 93b745d3e88c00c4abeafbfafb2dacce, type: 3}
   m_PrefabInstance: {fileID: 684345468}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &689790577 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5544761704602829943, guid: 73308d17ce9a5e240a2211223989890f, type: 3}
+  m_PrefabInstance: {fileID: 650750372}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7733ff77dd108b845a27e7f24a181e2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &695442934
 GameObject:
   m_ObjectHideFlags: 0
@@ -15324,6 +15340,7 @@ MonoBehaviour:
   particles: {fileID: 2027703665}
   birds: {fileID: 1783832958}
   timeToGoBack: 0.8
+  questStarted: 0
 --- !u!60 &981428487
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -15803,7 +15820,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4753054874583963175, guid: 73308d17ce9a5e240a2211223989890f, type: 3}
       propertyPath: questID.Array.size
-      value: 0
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753054874583963175, guid: 73308d17ce9a5e240a2211223989890f, type: 3}
+      propertyPath: questID.Array.data[0]
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753054874583963175, guid: 73308d17ce9a5e240a2211223989890f, type: 3}
+      propertyPath: questID.Array.data[1]
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753054874583963175, guid: 73308d17ce9a5e240a2211223989890f, type: 3}
+      propertyPath: questStepID.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753054874583963175, guid: 73308d17ce9a5e240a2211223989890f, type: 3}
+      propertyPath: questStepID.Array.data[1]
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5544761704602829943, guid: 73308d17ce9a5e240a2211223989890f, type: 3}
       propertyPath: questID
@@ -15875,7 +15908,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5544761704602829946, guid: 73308d17ce9a5e240a2211223989890f, type: 3}
       propertyPath: m_Name
-      value: INTERACTABLENPCBASIC
+      value: Crows
       objectReference: {fileID: 0}
     - target: {fileID: 5544761704602829946, guid: 73308d17ce9a5e240a2211223989890f, type: 3}
       propertyPath: m_IsActive
@@ -18285,7 +18318,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 650750373}
   - {fileID: 469523576}
   m_Father: {fileID: 198221663}
   m_RootOrder: 1
@@ -21722,6 +21754,7 @@ MonoBehaviour:
   treeAnim: {fileID: 276132776}
   deerAnim: {fileID: 469523578}
   treeCol: {fileID: 1897887916}
+  questStarted: 0
   timeToGoBack: 2
 --- !u!60 &1403959853
 PolygonCollider2D:
@@ -22012,6 +22045,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 239051551}
     m_Modifications:
+    - target: {fileID: 4753054874583963175, guid: 73308d17ce9a5e240a2211223989890f, type: 3}
+      propertyPath: questID.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753054874583963175, guid: 73308d17ce9a5e240a2211223989890f, type: 3}
+      propertyPath: questID.Array.data[0]
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753054874583963175, guid: 73308d17ce9a5e240a2211223989890f, type: 3}
+      propertyPath: questID.Array.data[1]
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753054874583963175, guid: 73308d17ce9a5e240a2211223989890f, type: 3}
+      propertyPath: questStepID.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4753054874583963175, guid: 73308d17ce9a5e240a2211223989890f, type: 3}
+      propertyPath: questStepID.Array.data[1]
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5544761704602829943, guid: 73308d17ce9a5e240a2211223989890f, type: 3}
       propertyPath: questID
       value: 8
@@ -22078,7 +22131,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5544761704602829946, guid: 73308d17ce9a5e240a2211223989890f, type: 3}
       propertyPath: m_Name
-      value: Sprite
+      value: Hermit
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5544761704602829944, guid: 73308d17ce9a5e240a2211223989890f, type: 3}
@@ -22145,6 +22198,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1442554604 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5544761704602829943, guid: 73308d17ce9a5e240a2211223989890f, type: 3}
+  m_PrefabInstance: {fileID: 1442554598}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442554600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7733ff77dd108b845a27e7f24a181e2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1446573074
 GameObject:
   m_ObjectHideFlags: 0
@@ -22488,6 +22552,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4290504334038415623, guid: 93b745d3e88c00c4abeafbfafb2dacce, type: 3}
   m_PrefabInstance: {fileID: 1449286893}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1466155990 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5544761704602829943, guid: 73308d17ce9a5e240a2211223989890f, type: 3}
+  m_PrefabInstance: {fileID: 1028090984}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7733ff77dd108b845a27e7f24a181e2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1467485732
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29228,7 +29303,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 92452c605613ecf43b12764d0dc9d2b2, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -35570,11 +35645,17 @@ MonoBehaviour:
   - {fileID: 2077681227}
   - {fileID: 1431957680}
   - {fileID: 1979569389}
+  - {fileID: 689790577}
+  - {fileID: 1466155990}
+  - {fileID: 1442554604}
   diverQuestObject: {fileID: 1772171081}
   fisherQuestObject: {fileID: 30326656}
   explorerQuestObject: {fileID: 1014274374}
   pirateQuestObject1: {fileID: 23926926}
   pirateQuestObject2: {fileID: 1591841648}
+  deerQuestObject: {fileID: 1403959852}
+  crowsQuestObject: {fileID: 981428486}
+  hermitQuestObject: {fileID: 367659719}
 --- !u!114 &2111336224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35608,6 +35689,14 @@ MonoBehaviour:
   metalAmountText: {fileID: 757733249}
   foodAmountText: {fileID: 134008592}
   woodAmountText: {fileID: 1509555706}
+  yearText: {fileID: 2069007978}
+  pirateQuestObject: {fileID: 1390990102}
+  diverQuestObject: {fileID: 3343406}
+  fishermanQuestObject: {fileID: 1212433962}
+  explorerQuestObject: {fileID: 56027507}
+  crowQuestObject: {fileID: 820796593}
+  hermitQuestObject: {fileID: 744938014}
+  deerQuestObject: {fileID: 363581013}
 --- !u!4 &2111336226
 Transform:
   m_ObjectHideFlags: 0
