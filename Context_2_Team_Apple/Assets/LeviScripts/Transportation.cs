@@ -6,8 +6,14 @@ public class Transportation : MonoBehaviour
 {
     [SerializeField] Transform floodedCity;
     [SerializeField] Transform forest;
-   
 
+    private void Awake()
+    {
+        
+    
+    }
+
+   
     public void GoToCity()
     {
         transform.position = floodedCity.position;

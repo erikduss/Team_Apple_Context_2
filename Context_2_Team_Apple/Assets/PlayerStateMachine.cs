@@ -6,11 +6,16 @@ public class PlayerStateMachine : MonoBehaviour
 {
     [SerializeField] PlayerMovement player;
 
+    [SerializeField] GameObject wOnly;
+    [SerializeField] GameObject upDown;
+    [SerializeField] GameObject leftRight;
+
     public enum PlayerStatesEnum
     {
         CanMove,
         inCutscene,
-        inMap
+        inMap,
+        inMiniGame
     };
 
     public PlayerStatesEnum currentState = PlayerStatesEnum.CanMove;
@@ -32,11 +37,17 @@ public class PlayerStateMachine : MonoBehaviour
         {
             case PlayerStatesEnum.CanMove:
                 player.Movement();
+                leftRight.SetActive(false);
+                wOnly.SetActive(false);
+                upDown.SetActive(false);
                 break;
             case PlayerStatesEnum.inCutscene:
                 break;
             case PlayerStatesEnum.inMap:
                 break;
+            case PlayerStatesEnum.inMiniGame:
+                break;
+
         }
     }
 

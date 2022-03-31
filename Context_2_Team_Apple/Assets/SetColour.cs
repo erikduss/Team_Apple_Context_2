@@ -1,28 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SetColour : MonoBehaviour
 {
-    [SerializeField] SpriteRenderer spriteRenderer;
+    RawImage image;
     
     [SerializeField] Color currentLocation;
     [SerializeField] Color notSelected;
     [SerializeField] Color trade;
 
-
+    private void Start()
+    {
+        image = GetComponent<RawImage>();
+    }
     public void CurrentlySelected()
     {
-        spriteRenderer.color = currentLocation;
+        image.color = currentLocation;
     }
 
     public void NotSelected()
     {
-        spriteRenderer.color = notSelected;
+        image.color = notSelected;
     }
 
     public void TradeIcon()
     {
-        spriteRenderer.color = trade;
+        image.color = trade;
     }
 }

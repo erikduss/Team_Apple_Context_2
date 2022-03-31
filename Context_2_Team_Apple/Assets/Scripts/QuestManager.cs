@@ -26,6 +26,10 @@ public class QuestManager : MonoBehaviour
         allAvailableQuests.Add(new ExplorerQuest { questID = 3 });
         allAvailableQuests.Add(new FisherQuest { questID = 4 });
         allAvailableQuests.Add(new NieuweQuest { questID = 5 });
+        allAvailableQuests.Add(new DeerResqueQuest { questID = 6 });
+        allAvailableQuests.Add(new CrowsHelpQuest { questID = 7 });
+        allAvailableQuests.Add(new HermitQuest { questID = 8 });
+        allAvailableQuests.Add(new NomadQuest { questID = 9 });
     }
 
     public bool CanProgressQuestStep(int questID, int questStepID)
@@ -214,5 +218,124 @@ public class QuestManager : MonoBehaviour
             }
         }
 
+        //Nieuwe quest
+        if (quest.questID == 5)
+        {
+            if (quest.currentQuestStep == 0)
+            {
+                npcs[2].ChangeNPCStatus(NPCStatus.HAS_QUEST_RUNNING);
+                fisherQuestObject.SetActive(true);
+            }
+            else if (quest.currentQuestStep == 1)
+            {
+                fisherQuestObject.SetActive(false);
+                npcs[2].ChangeNPCStatus(NPCStatus.HAS_QUEST_COMPLETE);
+            }
+            else if (quest.currentQuestStep == 2)
+            {
+                npcs[2].ChangeNPCStatus(NPCStatus.NONE);
+                npcs[2].gameObject.layer = 0;
+
+                //this quest completion enabled the explorer's quest.
+                npcs[1].ChangeNPCStatus(NPCStatus.HAS_QUEST_START);
+                npcs[1].gameObject.layer = 6;
+            }
+        }
+
+        //Deer quest
+        if (quest.questID == 6)
+        {
+            if (quest.currentQuestStep == 0)
+            {
+                npcs[2].ChangeNPCStatus(NPCStatus.HAS_QUEST_RUNNING);
+                fisherQuestObject.SetActive(true);
+            }
+            else if (quest.currentQuestStep == 1)
+            {
+                fisherQuestObject.SetActive(false);
+                npcs[2].ChangeNPCStatus(NPCStatus.HAS_QUEST_COMPLETE);
+            }
+            else if (quest.currentQuestStep == 2)
+            {
+                npcs[2].ChangeNPCStatus(NPCStatus.NONE);
+                npcs[2].gameObject.layer = 0;
+
+                //this quest completion enabled the explorer's quest.
+                npcs[1].ChangeNPCStatus(NPCStatus.HAS_QUEST_START);
+                npcs[1].gameObject.layer = 6;
+            }
+        }
+
+        //Crows quest
+        if (quest.questID == 7)
+        {
+            if (quest.currentQuestStep == 0)
+            {
+                npcs[2].ChangeNPCStatus(NPCStatus.HAS_QUEST_RUNNING);
+                fisherQuestObject.SetActive(true);
+            }
+            else if (quest.currentQuestStep == 1)
+            {
+                fisherQuestObject.SetActive(false);
+                npcs[2].ChangeNPCStatus(NPCStatus.HAS_QUEST_COMPLETE);
+            }
+            else if (quest.currentQuestStep == 2)
+            {
+                npcs[2].ChangeNPCStatus(NPCStatus.NONE);
+                npcs[2].gameObject.layer = 0;
+
+                //this quest completion enabled the explorer's quest.
+                npcs[1].ChangeNPCStatus(NPCStatus.HAS_QUEST_START);
+                npcs[1].gameObject.layer = 6;
+            }
+        }
+
+        //Hermit quest
+        if (quest.questID == 8)
+        {
+            if (quest.currentQuestStep == 0)
+            {
+                npcs[2].ChangeNPCStatus(NPCStatus.HAS_QUEST_RUNNING);
+                fisherQuestObject.SetActive(true);
+            }
+            else if (quest.currentQuestStep == 1)
+            {
+                fisherQuestObject.SetActive(false);
+                npcs[2].ChangeNPCStatus(NPCStatus.HAS_QUEST_COMPLETE);
+            }
+            else if (quest.currentQuestStep == 2)
+            {
+                npcs[2].ChangeNPCStatus(NPCStatus.NONE);
+                npcs[2].gameObject.layer = 0;
+
+                //this quest completion enabled the explorer's quest.
+                npcs[1].ChangeNPCStatus(NPCStatus.HAS_QUEST_START);
+                npcs[1].gameObject.layer = 6;
+            }
+        }
+
+        //Nomad quest
+        if (quest.questID == 9)
+        {
+            if (quest.currentQuestStep == 0)
+            {
+                npcs[2].ChangeNPCStatus(NPCStatus.HAS_QUEST_RUNNING);
+                fisherQuestObject.SetActive(true);
+            }
+            else if (quest.currentQuestStep == 1)
+            {
+                fisherQuestObject.SetActive(false);
+                npcs[2].ChangeNPCStatus(NPCStatus.HAS_QUEST_COMPLETE);
+            }
+            else if (quest.currentQuestStep == 2)
+            {
+                npcs[2].ChangeNPCStatus(NPCStatus.NONE);
+                npcs[2].gameObject.layer = 0;
+
+                //this quest completion enabled the explorer's quest.
+                npcs[1].ChangeNPCStatus(NPCStatus.HAS_QUEST_START);
+                npcs[1].gameObject.layer = 6;
+            }
+        }
     }
 }
